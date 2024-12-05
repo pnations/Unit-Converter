@@ -1,0 +1,124 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --hero-bg: #6943fe;
+    --hero-text: #ffffff;
+    --section-bg: #f4f4f4;
+    --input-bg: #8c74ff;
+    --button-bg: #ffffff;
+    --button-text: #333333;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f4f4f4;
+    --hero-bg: #4a2db0;
+    --hero-text: #ffffff;
+    --section-bg: #2a2a2a;
+    --input-bg: #6943fe;
+    --button-bg: #f4f4f4;
+    --button-text: #1a1a1a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5A537B;
+}
+
+p {
+    color: 353535;
+}
+
+.hero {
+    background: var(--hero-bg);
+    color: var(--hero-text);
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+main {
+    background: var(--section-bg);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.section {
+    background: var(--bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#input-El {
+    width: 100px;
+    color: var(--hero-text);
+    background-color: var(--input-bg);
+    border: 2px solid var(--hero-text);
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#convert-btn, #reset-btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+
+#convert-btn:hover, #reset-btn:hover {
+    opacity: 0.9;
+}
+
+.subtitle {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
